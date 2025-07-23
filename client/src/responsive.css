@@ -1,0 +1,248 @@
+* {
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 576px) {
+  .app-container {
+    padding: 10px;
+  }
+
+  .main-content {
+    padding: 10px;
+  }
+
+  
+  .header-section {
+    padding: 15px 0;
+  }
+
+  .main-title {
+    font-size: 1.8rem;
+  }
+
+  .subtitle {
+    font-size: 0.9rem;
+  }
+
+  .trophy-icon {
+    font-size: 1.5rem;
+  }
+
+  
+  .user-selector {
+    padding: 10px;
+  }
+
+  .user-selector-container {
+    flex-direction: column;
+  }
+
+  .user-selector button {
+    margin-right: 0;
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 12px 20px;
+    font-size: 0.9rem;
+  }
+
+  
+  .leaderboard-container {
+    padding: 10px;
+  }
+
+  .leaderboard-header {
+    padding: 10px;
+  }
+
+  .leaderboard-title {
+    font-size: 1.5rem;
+  }
+
+  
+  .top-winners {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+  }
+
+  .winner-card {
+    margin: 0;
+    min-height: 140px;
+  }
+
+  .winner-card.first {
+    transform: none;
+    order: -1;
+    margin-top: 0;
+    margin-bottom: 5px;
+    min-height: 160px;
+  }
+
+  .winner-card.second {
+    order: 0;
+  }
+
+  .winner-card.third {
+    order: 1;
+  }
+
+  .winner-card.first:hover {
+    transform: translateY(-5px);
+  }
+
+  .winner-avatar {
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+  }
+
+  
+  .leaderboard-list {
+    padding: 5px;
+  }
+
+  .leaderboard-item {
+    padding: 10px;
+    margin-bottom: 8px;
+  }
+
+  .item-avatar {
+    width: 30px;
+    height: 30px;
+    font-size: 1rem;
+    margin-right: 8px;
+  }
+
+  .item-name {
+    font-size: 0.9rem;
+  }
+
+  .item-points {
+    font-size: 0.9rem;
+  }
+
+  
+  .claim-button {
+    padding: 10px 15px;
+    font-size: 0.9rem;
+  }
+
+  .claim-message {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  
+  .confetti-container {
+    height: 200px;
+  }
+
+  
+  .footer {
+    margin-top: 20px;
+    font-size: 0.8rem;
+  }
+}
+
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .app-container {
+    padding: 15px;
+  }
+
+  .main-content {
+    padding: 15px;
+  }
+
+  
+  .top-winners {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    display: grid;
+    padding: 0;
+  }
+
+  .winner-card {
+    padding: 15px;
+  }
+
+  .winner-card.first {
+    transform: scale(1.05);
+  }
+
+  
+  .user-selector button {
+    padding: 12px 25px;
+  }
+}
+
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  .app-container {
+    padding: 20px;
+  }
+
+  
+  .top-winners {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+  .app-container {
+    padding: 25px;
+  }
+}
+
+
+@media screen and (min-width: 1201px) {
+  .main-content {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  nav {
+    padding: 10px;
+  }
+
+  nav a {
+    margin: 0 10px;
+    font-size: 1rem;
+    padding: 8px 15px;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .user-selector > div {
+    flex-direction: column;
+    padding: 10px 15px;
+  }
+
+  .user-selector button {
+    margin-right: 0;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  .dropdown-container {
+    width: 100%;
+  }
+
+  .dropdown-container select {
+    width: 100%;
+  }
+
+  .add-user-container {
+    width: 100%;
+  }
+
+  .add-user-container input {
+    width: calc(100% - 40px);
+  }
+}

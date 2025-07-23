@@ -8,7 +8,7 @@ const Leaderboard = forwardRef((props, ref) => {
     try {
       setLoading(true);
       setError(null);
-      const response = await API.get('/leaderboard');
+      const response = await API.get('api/leaderboard');
       setData(response.data);
     } catch (err) {
       setError('Failed to load leaderboard');

@@ -19,7 +19,7 @@ export default function UserSelector({ selectedUser, setSelectedUser }) {
     try {
       setLoading(true);
       const timestamp = new Date().getTime();
-      const response = await API.get(`/users?t=${timestamp}`);
+      const response = await API.get(`api/users?t=${timestamp}`);
       setUsers(response.data);
     } catch (error) {
       console.error('Error fetching users:', error);
@@ -30,7 +30,7 @@ export default function UserSelector({ selectedUser, setSelectedUser }) {
   const addUser = async () => {
     if (!newUser.trim()) return;
     try {
-      const response = await API.post('/users', { name: newUser.trim() });
+      const response = await API.post('api/users', { name: newUser.trim() });
       setUsers([...users, response.data]);
       setNewUser('');
       setShowAddInput(false); 

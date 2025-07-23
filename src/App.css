@@ -1,0 +1,1300 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  color: #333;
+}
+
+.app-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 20px;
+  position: relative;
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100%;
+}
+
+.app-container::before {
+  content: '';
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  width: 20px;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  animation: float 3s ease-in-out infinite;
+}
+
+.app-container::after {
+  content: '';
+  position: absolute;
+  top: 20%;
+  right: 15%;
+  width: 15px;
+  height: 15px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 50%;
+  animation: float 2s ease-in-out infinite reverse;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+.floating-circle-1 {
+  position: absolute;
+  top: 30%;
+  left: 5%;
+  width: 12px;
+  height: 12px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 50%;
+  animation: float 4s ease-in-out infinite;
+  pointer-events: none;
+}
+
+.floating-circle-2 {
+  position: absolute;
+  top: 60%;
+  right: 10%;
+  width: 18px;
+  height: 18px;
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 50%;
+  animation: float 3.5s ease-in-out infinite reverse;
+  pointer-events: none;
+}
+
+.floating-circle-3 {
+  position: absolute;
+  top: 80%;
+  left: 20%;
+  width: 14px;
+  height: 14px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  animation: float 2.8s ease-in-out infinite;
+  pointer-events: none;
+}
+
+.floating-circle-4 {
+  position: absolute;
+  top: 50%;
+  left: 80%;
+  width: 16px;
+  height: 16px;
+  background: rgba(255, 255, 255, 0.09);
+  border-radius: 50%;
+  animation: float 3.2s ease-in-out infinite reverse;
+  pointer-events: none;
+}
+
+.floating-circle-5 {
+  position: absolute;
+  top: 15%;
+  right: 30%;
+  width: 10px;
+  height: 10px;
+  background: rgba(255, 255, 255, 0.11);
+  border-radius: 50%;
+  animation: float 2.5s ease-in-out infinite;
+  pointer-events: none;
+}
+
+.floating-circle-6 {
+  position: absolute;
+  top: 70%;
+  right: 5%;
+  width: 22px;
+  height: 22px;
+  background: rgba(255, 255, 255, 0.07);
+  border-radius: 50%;
+  animation: float 4.2s ease-in-out infinite reverse;
+  pointer-events: none;
+}
+
+.floating-circle-7 {
+  position: absolute;
+  top: 25%;
+  left: 60%;
+  width: 13px;
+  height: 13px;
+  background: rgba(255, 255, 255, 0.09);
+  border-radius: 50%;
+  animation: float 3.7s ease-in-out infinite;
+  pointer-events: none;
+}
+
+.floating-circle-8 {
+  position: absolute;
+  top: 45%;
+  left: 15%;
+  width: 19px;
+  height: 19px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 50%;
+  animation: float 2.9s ease-in-out infinite reverse;
+  pointer-events: none;
+}
+
+.floating-circle-9 {
+  position: absolute;
+  top: 85%;
+  right: 25%;
+  width: 11px;
+  height: 11px;
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 50%;
+  animation: float 3.3s ease-in-out infinite;
+  pointer-events: none;
+}
+
+.floating-circle-10 {
+  position: absolute;
+  top: 35%;
+  right: 40%;
+  width: 17px;
+  height: 17px;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 50%;
+  animation: float 4.5s ease-in-out infinite reverse;
+  pointer-events: none;
+}
+
+.floating-circle-11 {
+  position: absolute;
+  top: 55%;
+  left: 35%;
+  width: 14px;
+  height: 14px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  animation: float 2.7s ease-in-out infinite;
+  pointer-events: none;
+}
+
+.floating-circle-12 {
+  position: absolute;
+  top: 90%;
+  left: 70%;
+  width: 20px;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 50%;
+  animation: float 3.8s ease-in-out infinite reverse;
+  pointer-events: none;
+}
+
+.floating-circle-13 {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  width: 15px;
+  height: 15px;
+  background: rgba(255, 255, 255, 0.09);
+  border-radius: 50%;
+  animation: float 3.1s ease-in-out infinite;
+  pointer-events: none;
+}
+
+.floating-circle-14 {
+  position: absolute;
+  top: 40%;
+  right: 20%;
+  width: 12px;
+  height: 12px;
+  background: rgba(255, 255, 255, 0.11);
+  border-radius: 50%;
+  animation: float 2.6s ease-in-out infinite reverse;
+  pointer-events: none;
+}
+
+.floating-circle-15 {
+  position: absolute;
+  top: 75%;
+  left: 40%;
+  width: 18px;
+  height: 18px;
+  background: rgba(255, 255, 255, 0.07);
+  border-radius: 50%;
+  animation: float 4.1s ease-in-out infinite;
+  pointer-events: none;
+}
+
+.floating-circle-16 {
+  position: absolute;
+  top: 12%;
+  right: 8%;
+  width: 16px;
+  height: 16px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 50%;
+  animation: float 3.4s ease-in-out infinite reverse;
+  pointer-events: none;
+}
+
+.floating-circle-17 {
+  position: absolute;
+  top: 65%;
+  left: 8%;
+  width: 21px;
+  height: 21px;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 50%;
+  animation: float 4.3s ease-in-out infinite;
+  pointer-events: none;
+}
+
+.floating-circle-18 {
+  position: absolute;
+  top: 22%;
+  left: 75%;
+  width: 13px;
+  height: 13px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  animation: float 2.8s ease-in-out infinite reverse;
+  pointer-events: none;
+}
+
+.floating-circle-19 {
+  position: absolute;
+  top: 52%;
+  right: 12%;
+  width: 14px;
+  height: 14px;
+  background: rgba(255, 255, 255, 0.09);
+  border-radius: 50%;
+  animation: float 3.6s ease-in-out infinite;
+  pointer-events: none;
+}
+
+.floating-circle-20 {
+  position: absolute;
+  top: 88%;
+  right: 15%;
+  width: 17px;
+  height: 17px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 50%;
+  animation: float 3.9s ease-in-out infinite reverse;
+  pointer-events: none;
+}
+
+.floating-circle-21 {
+  position: absolute;
+  top: 32%;
+  left: 25%;
+  width: 11px;
+  height: 11px;
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 50%;
+  animation: float 2.4s ease-in-out infinite;
+  pointer-events: none;
+}
+
+.floating-circle-22 {
+  position: absolute;
+  top: 58%;
+  right: 35%;
+  width: 19px;
+  height: 19px;
+  background: rgba(255, 255, 255, 0.07);
+  border-radius: 50%;
+  animation: float 4.4s ease-in-out infinite reverse;
+  pointer-events: none;
+}
+
+.floating-circle-23 {
+  position: absolute;
+  top: 8%;
+  left: 30%;
+  width: 16px;
+  height: 16px;
+  background: rgba(255, 255, 255, 0.09);
+  border-radius: 50%;
+  animation: float 3.2s ease-in-out infinite;
+  pointer-events: none;
+}
+
+.floating-circle-24 {
+  position: absolute;
+  top: 78%;
+  right: 45%;
+  width: 22px;
+  height: 22px;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 50%;
+  animation: float 4.6s ease-in-out infinite reverse;
+  pointer-events: none;
+}
+
+.floating-circle-25 {
+  position: absolute;
+  top: 48%;
+  left: 2%;
+  width: 8px;
+  height: 8px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 50%;
+  animation: float 2.2s ease-in-out infinite;
+  pointer-events: none;
+}
+
+.floating-circle-26 {
+  position: absolute;
+  top: 52%;
+  right: 2%;
+  width: 9px;
+  height: 9px;
+  background: rgba(255, 255, 255, 0.14);
+  border-radius: 50%;
+  animation: float 2.3s ease-in-out infinite reverse;
+  pointer-events: none;
+}
+
+.floating-circle-27 {
+  position: absolute;
+  top: 60%;
+  left: 3%;
+  width: 7px;
+  height: 7px;
+  background: rgba(255, 255, 255, 0.16);
+  border-radius: 50%;
+  animation: float 2.1s ease-in-out infinite;
+  pointer-events: none;
+}
+
+.floating-circle-28 {
+  position: absolute;
+  top: 65%;
+  right: 3%;
+  width: 10px;
+  height: 10px;
+  background: rgba(255, 255, 255, 0.13);
+  border-radius: 50%;
+  animation: float 2.4s ease-in-out infinite reverse;
+  pointer-events: none;
+}
+
+.floating-circle-29 {
+  position: absolute;
+  top: 42%;
+  left: 1%;
+  width: 6px;
+  height: 6px;
+  background: rgba(255, 255, 255, 0.17);
+  border-radius: 50%;
+  animation: float 2.0s ease-in-out infinite;
+  pointer-events: none;
+}
+
+.floating-circle-30 {
+  position: absolute;
+  top: 38%;
+  right: 1%;
+  width: 8px;
+  height: 8px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 50%;
+  animation: float 2.2s ease-in-out infinite reverse;
+  pointer-events: none;
+}
+
+.floating-circle-31 {
+  position: absolute;
+  top: 72%;
+  left: 4%;
+  width: 11px;
+  height: 11px;
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 50%;
+  animation: float 2.5s ease-in-out infinite;
+  pointer-events: none;
+}
+
+.floating-circle-32 {
+  position: absolute;
+  top: 68%;
+  right: 4%;
+  width: 9px;
+  height: 9px;
+  background: rgba(255, 255, 255, 0.14);
+  border-radius: 50%;
+  animation: float 2.3s ease-in-out infinite reverse;
+  pointer-events: none;
+}
+
+.floating-circle-33 {
+  position: absolute;
+  top: 44%;
+  left: 6%;
+  width: 12px;
+  height: 12px;
+  background: rgba(255, 255, 255, 0.11);
+  border-radius: 50%;
+  animation: float 2.6s ease-in-out infinite;
+  pointer-events: none;
+}
+
+.floating-circle-34 {
+  position: absolute;
+  top: 56%;
+  right: 6%;
+  width: 10px;
+  height: 10px;
+  background: rgba(255, 255, 255, 0.13);
+  border-radius: 50%;
+  animation: float 2.4s ease-in-out infinite reverse;
+  pointer-events: none;
+}
+
+.floating-circle-35 {
+  position: absolute;
+  top: 28%;
+  left: 12%;
+  width: 14px;
+  height: 14px;
+  background: rgba(255, 255, 255, 0.09);
+  border-radius: 50%;
+  animation: float 3.0s ease-in-out infinite;
+  pointer-events: none;
+}
+
+.floating-circle-36 {
+  position: absolute;
+  top: 82%;
+  right: 18%;
+  width: 16px;
+  height: 16px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 50%;
+  animation: float 3.3s ease-in-out infinite reverse;
+  pointer-events: none;
+}
+
+.floating-circle-37 {
+  position: absolute;
+  top: 18%;
+  left: 45%;
+  width: 13px;
+  height: 13px;
+  background: rgba(255, 255, 255, 0.10);
+  border-radius: 50%;
+  animation: float 2.9s ease-in-out infinite;
+  pointer-events: none;
+}
+
+.floating-circle-38 {
+  position: absolute;
+  top: 85%;
+  left: 55%;
+  width: 15px;
+  height: 15px;
+  background: rgba(255, 255, 255, 0.09);
+  border-radius: 50%;
+  animation: float 3.1s ease-in-out infinite reverse;
+  pointer-events: none;
+}
+
+.floating-circle-39 {
+  position: absolute;
+  top: 26%;
+  right: 22%;
+  width: 11px;
+  height: 11px;
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 50%;
+  animation: float 2.7s ease-in-out infinite;
+  pointer-events: none;
+}
+
+.floating-circle-40 {
+  position: absolute;
+  top: 74%;
+  left: 28%;
+  width: 17px;
+  height: 17px;
+  background: rgba(255, 255, 255, 0.07);
+  border-radius: 50%;
+  animation: float 3.4s ease-in-out infinite reverse;
+  pointer-events: none;
+}
+
+.floating-circle-41 {
+  position: absolute;
+  top: 14%;
+  right: 32%;
+  width: 12px;
+  height: 12px;
+  background: rgba(255, 255, 255, 0.11);
+  border-radius: 50%;
+  animation: float 2.8s ease-in-out infinite;
+  pointer-events: none;
+}
+
+.floating-circle-42 {
+  position: absolute;
+  top: 92%;
+  right: 28%;
+  width: 18px;
+  height: 18px;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 50%;
+  animation: float 3.5s ease-in-out infinite reverse;
+  pointer-events: none;
+}
+
+.floating-circle-43 {
+  position: absolute;
+  top: 36%;
+  left: 72%;
+  width: 10px;
+  height: 10px;
+  background: rgba(255, 255, 255, 0.13);
+  border-radius: 50%;
+  animation: float 2.4s ease-in-out infinite;
+  pointer-events: none;
+}
+
+.floating-circle-44 {
+  position: absolute;
+  top: 62%;
+  right: 38%;
+  width: 14px;
+  height: 14px;
+  background: rgba(255, 255, 255, 0.09);
+  border-radius: 50%;
+  animation: float 3.0s ease-in-out infinite reverse;
+  pointer-events: none;
+}
+
+.floating-circle-45 {
+  position: absolute;
+  top: 16%;
+  left: 68%;
+  width: 9px;
+  height: 9px;
+  background: rgba(255, 255, 255, 0.14);
+  border-radius: 50%;
+  animation: float 2.3s ease-in-out infinite;
+  pointer-events: none;
+}
+
+.floating-circle-46 {
+  position: absolute;
+  top: 86%;
+  left: 15%;
+  width: 16px;
+  height: 16px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 50%;
+  animation: float 3.2s ease-in-out infinite reverse;
+  pointer-events: none;
+}
+
+.floating-circle-47 {
+  position: absolute;
+  top: 24%;
+  right: 55%;
+  width: 13px;
+  height: 13px;
+  background: rgba(255, 255, 255, 0.10);
+  border-radius: 50%;
+  animation: float 2.9s ease-in-out infinite;
+  pointer-events: none;
+}
+
+.floating-circle-48 {
+  position: absolute;
+  top: 94%;
+  left: 42%;
+  width: 20px;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 50%;
+  animation: float 3.7s ease-in-out infinite reverse;
+  pointer-events: none;
+}
+
+.main-content {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.header-section {
+  text-align: center;
+  margin-bottom: 40px;
+  padding: 40px 20px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.header-section::after {
+  content: '';
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.7), transparent);
+  border-radius: 2px;
+}
+
+.trophy-icon {
+  font-size: 4.5rem;
+  margin-bottom: 20px;
+  animation: float-rotate 5s ease-in-out infinite;
+  text-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  display: inline-block;
+}
+
+@keyframes float-rotate {
+  0%, 100% { 
+    transform: translateY(0px) rotate(0deg); 
+    text-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  25% { 
+    transform: translateY(-10px) rotate(-5deg); 
+    text-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  }
+  75% { 
+    transform: translateY(-5px) rotate(5deg); 
+    text-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+
+.main-title {
+  font-size: 3.2rem;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 10px;
+  text-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  letter-spacing: 1px;
+  background: linear-gradient(135deg, #fff 0%, rgba(255,255,255,0.85) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+  display: inline-block;
+}
+
+.subtitle {
+  font-size: 1.3rem;
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  position: relative;
+  margin-top: 5px;
+  opacity: 0;
+  animation: fadeInUp 1s forwards 0.5s;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.controls-section {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+  padding: 30px;
+  margin-bottom: 30px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15), inset 0 -3px 0 rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  transform-style: preserve-3d;
+}
+
+.controls-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #00b894, #00a085, #00b894);
+  background-size: 200% 100%;
+  animation: gradientMove 4s linear infinite;
+}
+
+.controls-section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2), inset 0 -3px 0 rgba(0, 0, 0, 0.05);
+}
+
+.leaderboard-container {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15), inset 0 -3px 0 rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  margin-bottom: 30px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.leaderboard-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #667eea, #764ba2, #667eea);
+  background-size: 200% 100%;
+  animation: gradientMove 4s linear infinite;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.leaderboard-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2), inset 0 -3px 0 rgba(0, 0, 0, 0.05);
+}
+
+.leaderboard-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  gap: 10px;
+}
+
+.leaderboard-title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+}
+
+.refresh-icon {
+  font-size: 1rem;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.top-winners {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-bottom: 30px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.winner-card {
+  background: linear-gradient(135deg, #ffeaa7 0%, #fab1a0 100%);
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  overflow: hidden;
+  z-index: 1;
+  min-height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.winner-card::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255,255,255,0.3) 0%, transparent 60%);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  z-index: -1;
+}
+
+.winner-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.winner-card:hover::before {
+  opacity: 1;
+}
+
+.winner-card.first {
+  background: linear-gradient(135deg, #ffd700 0%, #ffb347 100%);
+  transform: scale(1.1);
+  box-shadow: 0 15px 35px rgba(255, 180, 0, 0.3);
+  animation: glow 2s infinite alternate;
+  z-index: 2;
+  min-height: 200px;
+  margin-top: -10px;
+}
+
+@keyframes glow {
+  from {
+    box-shadow: 0 15px 35px rgba(255, 180, 0, 0.3);
+  }
+  to {
+    box-shadow: 0 15px 45px rgba(255, 180, 0, 0.5);
+  }
+}
+
+.winner-card.first:hover {
+  transform: scale(1.15) translateY(-8px);
+}
+
+.winner-card.second {
+  background: linear-gradient(135deg, #c0c0c0 0%, #b8b8b8 100%);
+  box-shadow: 0 10px 25px rgba(192, 192, 192, 0.3);
+}
+
+.winner-card.third {
+  background: linear-gradient(135deg, #cd7f32 0%, #d2691e 100%);
+  box-shadow: 0 10px 25px rgba(205, 127, 50, 0.3);
+}
+
+.winner-card.placeholder {
+  background: linear-gradient(135deg, #e0e0e0 0%, #cccccc 100%);
+  opacity: 0.7;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.winner-card.placeholder .winner-name,
+.winner-card.placeholder .winner-points {
+  color: #666;
+}
+
+.placeholder-avatar {
+  background: linear-gradient(135deg, #cccccc 0%, #bbbbbb 100%);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.winner-position {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 30px;
+  background: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #333;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.winner-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px auto 15px;
+  font-size: 1.5rem;
+  color: #fff;
+  font-weight: bold;
+  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.5);
+  position: relative;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.winner-avatar::before {
+  content: '';
+  position: absolute;
+  top: -10%;
+  left: -10%;
+  width: 120%;
+  height: 120%;
+  background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  transform: rotate(25deg) translateX(-100%);
+  transition: transform 0.6s ease;
+}
+
+.winner-card:hover .winner-avatar {
+  transform: scale(1.1) rotate(5deg);
+}
+
+.winner-card:hover .winner-avatar::before {
+  transform: rotate(25deg) translateX(100%);
+}
+
+.winner-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.winner-points {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.leaderboard-list {
+  list-style: none;
+}
+
+.leaderboard-item {
+  background: linear-gradient(120deg, #fff 0%, #f8f9fa 100%);
+  border-radius: 12px;
+  padding: 15px 20px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border-left: 4px solid transparent;
+  position: relative;
+  overflow: hidden;
+}
+
+.leaderboard-item::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, rgba(102, 126, 234, 0.2), transparent);
+  transform: translateX(-100%);
+  transition: transform 0.5s ease;
+}
+
+.leaderboard-item:hover {
+  transform: translateX(5px) translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  border-left-color: #667eea;
+}
+
+.leaderboard-item:hover::after {
+  transform: translateX(100%);
+}
+
+.item-left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.item-rank {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #667eea;
+  min-width: 30px;
+}
+
+.item-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: bold;
+}
+
+.item-name {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.item-points {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #667eea;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.fire-icon {
+  color: #ff6b35;
+}
+
+.user-selector {
+  margin-bottom: 20px;
+}
+
+.selector-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.user-select {
+  width: 100%;
+  padding: 12px 16px;
+  border: 2px solid #e1e8ed;
+  border-radius: 10px;
+  font-size: 1rem;
+  background: #fff;
+  transition: border-color 0.3s ease;
+  margin-bottom: 15px;
+}
+
+.user-select:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+.add-user-section {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.user-input {
+  flex: 1;
+  padding: 12px 16px;
+  border: 2px solid #e1e8ed;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.user-input:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+.add-user-btn {
+  padding: 12px 20px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.add-user-btn:hover {
+  transform: translateY(-2px);
+}
+
+.claim-section {
+  text-align: center;
+}
+
+.claim-button {
+  background: linear-gradient(135deg, #00b894 0%, #00a085 100%);
+  color: #fff;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 25px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 184, 148, 0.3);
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.claim-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle, rgba(255,255,255,0.3) 0%, transparent 70%);
+  transform: scale(0);
+  border-radius: 25px;
+  z-index: -1;
+  transition: transform 0.6s ease-out;
+}
+
+.claim-button:hover:not(:disabled)::before {
+  transform: scale(2.5);
+}
+
+.claim-button:hover:not(:disabled) {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 184, 148, 0.4);
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 4px 15px rgba(0, 184, 148, 0.3);
+  }
+  50% {
+    box-shadow: 0 4px 25px rgba(0, 184, 148, 0.6);
+  }
+  100% {
+    box-shadow: 0 4px 15px rgba(0, 184, 148, 0.3);
+  }
+}
+
+.claim-button:disabled {
+  background: #ddd;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.claim-message {
+  margin-top: 15px;
+  padding: 15px 25px;
+  border-radius: 15px;
+  font-weight: 600;
+  position: relative;
+  overflow: hidden;
+  animation: message-pop 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+  transform-origin: center;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+@keyframes message-pop {
+  0% { transform: scale(0.8); opacity: 0; }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.claim-message.success {
+  background: rgba(0, 184, 148, 0.15);
+  color: #00b894;
+  border-left: 4px solid #00b894;
+}
+
+.claim-message.success::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at center, rgba(0, 184, 148, 0.2) 0%, transparent 70%);
+  animation: pulse-success 2s infinite;
+}
+
+@keyframes pulse-success {
+  0%, 100% { opacity: 0.5; }
+  50% { opacity: 0.1; }
+}
+
+.claim-message.error {
+  background: rgba(255, 107, 53, 0.15);
+  color: #ff6b35;
+  border-left: 4px solid #ff6b35;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 40px;
+  padding: 20px;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.9rem;
+}
+
+.loading-message {
+  text-align: center;
+  padding: 40px;
+  color: #667eea;
+  font-size: 1.1rem;
+}
+
+.error-message {
+  text-align: center;
+  padding: 20px;
+  background: rgba(255, 107, 53, 0.1);
+  color: #ff6b35;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 40px;
+  color: #888;
+}
+
+.empty-state h3 {
+  margin-bottom: 10px;
+  color: #667eea;
+}
+
+@media (max-width: 768px) {
+  .main-title {
+    font-size: 2rem;
+  }
+  
+  .trophy-icon {
+    font-size: 3rem;
+  }
+  
+  .top-winners {
+    grid-template-columns: 1fr;
+  }
+  
+  .winner-card.first {
+    transform: none;
+  }
+  
+  .add-user-section {
+    flex-direction: column;
+  }
+  
+  .add-user-btn {
+    width: 100%;
+  }
+}

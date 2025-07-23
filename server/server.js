@@ -20,5 +20,9 @@ app.use('/api/claim', require('./routes/claim'));
 app.use('/api/leaderboard', require('./routes/leaderboard'));
 app.use('/api/history', require('./routes/history'));
 
+app.get("/", (req, res) => {
+  res.send("Backend is running!");
+});
+
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));

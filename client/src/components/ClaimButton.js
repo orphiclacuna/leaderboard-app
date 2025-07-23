@@ -15,7 +15,7 @@ export default function ClaimButton({ selectedUser, onClaimed }) {
     try {
       setLoading(true);
       setMessage('');
-      const response = await API.post('/claim', { userId: selectedUser });
+      const response = await API.post('api/claim', { userId: selectedUser });
       const pts = response.data.randomPoints;
       setMessage(`🎉 Amazing! You claimed ${pts} points!`);
       setMessageType('success');

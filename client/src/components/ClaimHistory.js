@@ -10,7 +10,7 @@ const ClaimHistory = () => {
   const fetchHistory = async () => {
     try {
       setLoading(true);
-      const res = await API.get("/history");
+      const res = await API.get("api/history");
       setHistory(res.data);
     } catch (err) {
       setError("Failed to load claim history");

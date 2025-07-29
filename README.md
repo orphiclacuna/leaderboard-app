@@ -65,11 +65,6 @@ Leaderboard/
     package.json
 ```
 
-## Customization
-- Edit styles in `client/src/App.css`, `responsive.css`, etc. for UI tweaks
-- Add new features in React components under `client/src/components/`
-- Extend backend API in `server/routes/`
-
 ## License
 MIT
 
